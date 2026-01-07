@@ -71,7 +71,7 @@
 
         .content {
             width: 100%;
-            padding-top: 7rem;
+            padding: 1rem;
             margin-bottom: 4rem;
         }
         .titol {
@@ -90,10 +90,11 @@
 
         }
         .img-titol {
-            width: 20rem;
+            display: block;
+            width: 25rem;
             height: 15rem;
             object-fit: cover;
-            border-radius: 3rem;
+            border-radius: 2rem;
             margin: 0 auto;
         }
 
@@ -110,7 +111,7 @@
         .gameplay iframe {
             max-width: 1200px;
             width: 100%;
-            border-radius: 2rem;
+            border-radius: 1rem;
             aspect-ratio: 16 / 9;
         }
 
@@ -210,6 +211,21 @@
                 transform: scale(0.9);
             }
         }
+
+        /* Pantalla Mòbil */
+        @media only screen and (max-width: 575px) {
+            .img-titol {
+                width: calc(100% + 2rem);
+                border-radius: 0;
+                margin: 0 -1rem;
+            }
+        }
+        /* Pantalla Tablet */
+        @media only screen and (min-width: 576px) { }
+        /* Pantalla PC */
+        @media only screen and (min-width: 768px) { }
+        /* Pantalla Molt Gran */
+        @media only screen and (min-width: 992px) { }
     </style>
 </head>
 <body>
@@ -222,7 +238,7 @@
         <div class="titol-header">Mad Jumpgate</div>
     </header>
 
-    <section class="content p-3">
+    <section class="content">
         <section class="text-center mt-5 mb-5">
             <div class="titol pt-5">
                 Mad Jumpgate
