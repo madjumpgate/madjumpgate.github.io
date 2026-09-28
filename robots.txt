@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mad-jumpgate.github.io/sitemap.xml
+Sitemap: https://madjumpgate.github.io/sitemap.xml
